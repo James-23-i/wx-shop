@@ -1,0 +1,41 @@
+<!--page/category/category.wxml-->
+<w-search-input/>
+
+<view class="menu">
+  <scroll-view scroll-y class="menu-left">
+    <block wx:for="{{leftMenuList}}" wx:key="index">
+      <view class="menu-left-item {{ currentIndex === index ? 'active' : '' }}" 
+            bindtap="menuClick" 
+            data-index="{{index}}">
+        {{item}}
+      </view>
+    </block>
+  </scroll-view>
+
+  <!-- scroll-top：设置竖向滚动条位置，点击左边，右边的内容能自动回到顶部 -->
+  <scroll-view scroll-y
+              class="menu-right"
+              scroll-top="{{scrollTop}}">
+    <block wx:for="{{rightMenuList}}" wx:key="index" wx:for-item="item1" wx:for-index="index1">
+      <view class="menu-right-item">
+        <view class="title">
+          <text>/</text>
+            {{item1.cat_name}}
+          <text>/</text>
+        </view>
+        <block wx:for="{{item1.children}}" wx:key="index">
+          <view class="content">
+            <!-- 
+              点击跳转到商品的详情页，传递的参数通过 onLoad中的 options接收
+               url => goods_list（参数：传递商品的id）
+            -->
+            <navigator class="nav" url="/page/goods_list/goods_list?cid={{item.cat_id}}">
+              <image mode="widthFix" class="img" src="{{item.cat_icon}}"></image>
+              <view class="name">{{item.cat_name}}</view>
+            </navigator>
+          </view>
+        </block>
+      </view>
+    </block>
+  </scroll-view>
+</view>

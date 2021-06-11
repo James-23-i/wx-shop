@@ -1,0 +1,23 @@
+/* page/order/order.wxss */
+.order_item{
+  display: flex;
+  justify-content: space-evenly;
+  height: 160rpx;
+  width: 100%;
+  flex-direction: column;
+  border-bottom: 5rpx solid #e6e6e6;
+}
+
+.order_number, .order_price, .timeStamp{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.price_color{
+  color: var(--themeColor);
+  font-weight: 700;
+}
+

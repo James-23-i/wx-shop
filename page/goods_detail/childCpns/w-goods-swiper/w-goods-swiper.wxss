@@ -1,0 +1,13 @@
+/* page/goods_detail/childCpns/w-goods-swiper/w-goods-swiper.wxss */
+.swiper{
+  height: 500rpx;
+}
+
+.swiper .swiper-item .img{
+  /* 居中 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}

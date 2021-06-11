@@ -1,0 +1,15 @@
+/* page/index/childCpns/w-menu/w-menu.wxss */
+.menu{
+  display: flex;
+  width: 100%;
+}
+
+.menu .menu-item{
+  flex: 1;
+  text-align: center;
+  padding: 20rpx;
+}
+
+.menu .menu-item .img{
+  width: 120rpx;
+}

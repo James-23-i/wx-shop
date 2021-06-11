@@ -1,0 +1,23 @@
+<!--page/search/search.wxml-->
+<view class="search_input">
+  <input type="text" 
+        value="{{inputValue}}"
+        class="input"
+        placeholder="请输入搜索内容" 
+        bindinput="inputChange" />
+        <!-- 当点击事件被通过定位的元素改变位置时，监听不到该点击事件，必须通过z-index来控制该点击事件的层级 -->
+  <view hidden="{{isShow}}" 
+        class="btn" 
+        bindtap="btnCancel">
+  X</view>
+</view>
+
+<scroll-view scroll-y class="scroll">
+  <view class="search_content">
+    <block wx:for="{{searchGoods}}" wx:key="index">
+      <navigator url="/page/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+        <view class="search_item">{{item.goods_name}}</view>
+      </navigator>
+    </block>
+  </view>
+</scroll-view>

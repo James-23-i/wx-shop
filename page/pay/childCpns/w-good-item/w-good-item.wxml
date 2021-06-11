@@ -1,0 +1,19 @@
+<!--page/pay/childCpns/w-good-item/w-good-item.wxml-->
+  <view class="cart-item">
+    <block wx:for="{{checkedCart}}" wx:key="index">
+      <view class="item">
+        <view class="img_logo">
+          <image class="img" src="{{item.goods_img}}" mode="widthFix"></image>
+        </view>
+        <view class="desc_num_price">
+          <view class="title">{{item.goods_name}}</view>
+          <view class="price_num">
+            <view class="price">￥{{item.goods_price}}</view>
+            <view class="changeNum">
+              <view class="num">×{{item.num}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>

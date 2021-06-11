@@ -1,0 +1,39 @@
+<!--page/cart/cart.wxml-->
+<!-- 当用户添加收货地址，把按钮隐藏，显示该收货地址信息-->
+<view class="get_address" wx:if="{{!address.userName}}">
+  <button type="warn" plain class="btn" bindtap="chooseAddress">添加收获地址</button>
+</view>
+
+<view class="show_address" wx:else>
+  <view class="name_address">
+    <view class="name">{{address.userName}}</view>
+    <view class="address">{{addressAll}}</view>
+  </view>
+  <view class="telNumber">
+    {{address.telNumber}}
+  </view>
+</view>
+
+<view class="textCart">购物车</view>
+
+<scroll-view scroll-y class="scroll">
+  <w-good-item cartList="{{cartList}}" bindcheckItem="checkItem" bindchangeNum="changeNum"/>
+</scroll-view>
+
+<view class="toolbar">
+  <view class="checkbox">
+    <!-- checkbox-group 监听选项改变 -->
+    <checkbox-group bindchange="handleAllChecked">
+      <checkbox checked="{{allChecked}}">全选</checkbox>
+    </checkbox-group>
+  </view>
+  <view class="totalPrice">
+    <view class="priceText">
+      合计：<text class="text">￥{{allPrice}}</text>
+    </view>
+    <view class="tips">包含运费</view>
+  </view>
+  <view class="totalNum" bindtap="calcPrice">
+    结算（{{allNum}}）
+  </view>
+</view>

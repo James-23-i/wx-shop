@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-good-item": "./childCpns/w-good-item/w-good-item"
+  },
+  "navigationBarTitleText": "商品支付"
+}

@@ -1,0 +1,93 @@
+<!--page/user/user.wxml-->
+<block wx:if="{{userInfo.nickName}}">
+  <view class="user_info">
+    <image class="img_bg" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+    <view class="user_login">
+      <view class="user_head_img">
+        <image class="img_head" src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+      </view>
+      <view class="user_name">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+</block>
+
+<block wx:else>
+  <view class="btn">
+    <navigator url="/page/login/login" class="login">
+      登录
+    </navigator>
+  </view>
+</block>
+
+<view class="user_detail">
+  <view class="goods_detail">
+    <navigator class="collect_shops">
+      <view class="collect">0</view>
+      <view class="shops">收藏的店铺</view>
+    </navigator>
+    <navigator class="collect_goods" url="/page/collect/collect">
+      <view class="collect">{{collect.length}}</view>
+      <view class="shop">收藏的商品</view>
+    </navigator>
+    <navigator class="collect_attent">
+      <view class="collect">0</view>
+      <view class="shop">关注的店铺</view>
+    </navigator>
+    <navigator class="collect_history">
+      <view class="collect">0</view>
+      <view class="shop">我的足迹</view>
+    </navigator>
+  </view>
+
+  <view class="my_order">
+    <view class="title">我的订单</view>
+    <view class="order_detail">
+    <!-- 点击全部订单跳转到订单页面，并且传递参数type -->
+      <navigator class="all_order" url="/page/order/order?type=1">
+        <view class="icon">
+          <image class="img" src="/assets/icon/dindan.png" mode="widthFix"></image>
+        </view>
+        <view class="order">全部订单</view>
+      </navigator>
+      <navigator class="wait_pay">
+        <view class="icon">
+          <image class="img" src="/assets/icon/pay.png" mode="widthFix"></image>
+        </view>
+        <view class="pay">待付款</view>
+      </navigator>
+      <navigator class="wait_good">
+        <view class="icon">
+          <image class="img" src="/assets/icon/shouhuo.png" mode="widthFix"></image>
+        </view>
+        <view class="good">待收货</view>
+      </navigator>
+      <navigator class="refundShop">
+        <view class="icon">
+          <image class="img" src="/assets/icon/refund.png" mode="widthFix"></image>
+        </view>
+        <view class="refund">退款/退货</view>
+      </navigator>
+    </view>
+  </view>
+
+  <navigator class="nav_manager">
+    <view>收获地址管理</view>
+  </navigator>
+
+  <view class="content">
+    <navigator class="conn">
+      <text class="conn_service">联系我们</text>
+      <text class="conn_tel">400-618-4000</text>
+    </navigator>
+    <navigator class="feedback" url="/page/feedback/feedback">
+      <view>意见反馈</view>
+    </navigator>
+    <navigator class="about">
+      <view>关于我们</view>
+    </navigator>
+  </view>
+
+  <navigator class="recommend">
+    <view>把应用推荐给其他人</view>
+  </navigator>
+</view>

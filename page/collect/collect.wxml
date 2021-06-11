@@ -1,0 +1,17 @@
+<!--page/collect/collect.wxml-->
+<w-tab-control class="tab-control" titles="{{titles}}" />
+<scroll-view scroll-y class="scroll">
+  <block wx:for="{{collect}}" wx:key="index">
+    <navigator url="/page/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+      <view class="collect_goods">
+        <view class="collect_img">
+          <image class="img" src="{{item.goods_img}}" mode="widthFix"></image>
+        </view>
+        <view class="collect_tit_price">
+          <view class="collect_title">{{item.goods_name}}</view>
+          <view class="collect_price">￥{{item.goods_price}}</view>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</scroll-view>

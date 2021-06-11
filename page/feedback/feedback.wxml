@@ -1,0 +1,36 @@
+<!--page/feedback/feedback.wxml-->
+<!-- 小程序内置的意见反馈组件 -->
+<!-- <button open-type="feedback">意见反馈</button> -->
+<w-tab-control titles="{{titles}}"/>
+<view class="fb_content">
+  <view class="fb_title">问题的种类</view>
+  <view class="fb_tips">
+    <text class="tips">功能建议</text>
+    <text class="tips">购买遇到问题</text>
+    <text class="tips">性能问题</text>
+    <text class="tips">其他</text>
+  </view>
+  <view class="fb_desc">
+    <textarea maxlength="{{-1}}" 
+              class="text" 
+              placeholder="请输入要反馈的内容">
+  </textarea>
+    <view class="addImage">
+      <button bindtap="upImages" class="btn">+</button>
+        <view class="upImage">
+          <block wx:for="{{imageChoose}}" wx:key="index">
+            <!-- data-传递数组中的元素 -->
+            <w-up-image class="item_image" 
+                        src="{{item.path}}"
+                        bindtap="PreImage"
+                        data-item="{{item}}"
+                        data-index="{{index}}"
+                        binddelImage="delImage"/>
+          </block>
+        </view>
+    </view>
+  </view>
+  <view class="submit">
+    <button class="btn" type="warn" form-type="submit">提交</button>
+  </view>
+</view>

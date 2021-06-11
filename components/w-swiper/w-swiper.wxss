@@ -1,0 +1,9 @@
+/* components/w-swiper/w-swiper.wxss */
+/* swiper组件的默认高度为150px，所以要调整高度，使其适配 */
+.swiper{
+  height: 300rpx;
+}
+
+.swiper .swiper-item .img{
+  width: 100%;
+}

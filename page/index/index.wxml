@@ -1,0 +1,5 @@
+<!--page/index/index.wxml-->
+<w-search-input/>
+<w-swiper banners="{{banners}}"/>
+<w-menu menu="{{menu}}"/>
+<w-floor floorData="{{floorData}}"/>

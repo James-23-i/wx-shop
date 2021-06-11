@@ -1,0 +1,46 @@
+<!--page/cart/childCpns/w-good-item/w-good-item.wxml-->
+<block wx:if="{{cartList.length}}">
+  <view class="cart-item">
+    <block wx:for="{{cartList}}" wx:key="index">
+      <view class="item">
+        <view class="check">
+        <!-- 绑定change事件，data数据 -->
+          <checkbox-group data-id="{{item.goods_id}}" bindchange="checkItem">
+            <checkbox checked="{{item.checked}}"></checkbox>
+          </checkbox-group>
+        </view>
+        <view class="img_logo">
+          <image class="img" src="{{item.goods_img}}" mode="widthFix"></image>
+        </view>
+        <view class="desc_num_price">
+          <view class="title">{{item.goods_name}}</view>
+          <view class="price_num">
+            <view class="price">￥{{item.goods_price}}</view>
+            <view class="changeNum">
+              <!-- 绑定相同的事件，通过自定义属性来区分 data-operation -->
+              <view class="btnSub" 
+                    bindtap="tapChangeNum" 
+                    data-id="{{item.goods_id}}" 
+                    data-operation="{{-1}}">-</view>
+              <view class="num">{{item.num}}</view>
+              <view class="btnAdd" 
+                    bindtap="tapChangeNum" 
+                    data-id="{{item.goods_id}}" 
+                    data-operation="{{1}}">+</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</block>
+
+<block wx:else>
+  <view class="cart">
+    <image class="img" mode="widthFix" src="/assets/icon/cart.png"></image>
+    <view class="title">亲，购物车空空耶，赶紧去挑商品吧</view>
+    <navigator class="nav" url="/page/category/category" open-type="switchTab">
+      <button type="warn" plain>去逛逛</button>
+    </navigator>
+  </view> 
+</block>

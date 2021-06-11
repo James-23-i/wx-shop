@@ -1,0 +1,12 @@
+<!--page/auth/auth.wxml-->
+<!-- 
+  通过button组件获取用户信息
+    open-type:getUserInfo与bindgetuserinfo结合使用获取用户信息
+-->
+<button class="btn" 
+        plain 
+        type="primary"
+        open-type="getUserInfo"
+        bindgetuserinfo="getUserInfo">
+        获取授权
+</button>

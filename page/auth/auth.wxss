@@ -1,0 +1,4 @@
+/* page/auth/auth.wxss */
+.btn{
+  margin-top: 20rpx;
+}

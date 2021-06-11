@@ -1,0 +1,44 @@
+/* page/goods_list/childCpns/w-good-item/w-good-item.wxss */
+.good-item .good-content{
+  display: flex;
+  height: 250rpx;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 6rpx solid rgba(241, 241, 241);
+  font-size: 27rpx;
+}
+
+.good-content .item-img{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.good-content .content{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.good-item .good-content .content .title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.good-item .good-content .content .price{
+  color: var(--themeColor);
+}
+
+.good-item .item-img .img{
+  width: 70%;
+  height: 70%;
+}
+
+

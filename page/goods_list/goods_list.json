@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "w-tab-control": "/components/w-tab-control/w-tab-control",
+    "w-good-item": "./childCpns/w-good-item/w-good-item"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "navigationBarTitleText": "商品列表"
+}

@@ -1,0 +1,4 @@
+<!--page/goods_list/goods_list.wxml-->
+<w-search-input/>
+<w-tab-control class="tab-control" titles="{{titles}}"/>
+<w-good-item class="good-item" goodsList="{{goodsList}}"/>

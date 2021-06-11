@@ -1,0 +1,17 @@
+<!--page/goods_detail/childCpns/w-goods-swiper/w-goods-swiper.wxml-->
+<!-- 监听是wiper-item的点击，触发wx.previewImage事件 -->
+<swiper class="swiper"
+        autoplay
+        indicator-active-color="#eb4450"
+        indicator-dots
+        circular
+        interval="3000"
+        duration="300">
+  <block wx:for="{{goodBanners}}" wx:key="index">
+    <swiper-item class="swiper-item"
+                bindtap="previewImage"
+                data-url="{{item.pics_mid}}">
+        <image class="img" mode="widthFix" src="{{item.pics_mid}}"></image>
+    </swiper-item>  
+  </block>
+</swiper>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-goods-swiper": "./childCpns/w-goods-swiper/w-goods-swiper"
+  },
+  "navigationBarTitleText": "商品详情"
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "w-tab-control": "/components/w-tab-control/w-tab-control",
+    "w-up-image": "/components/w-up-image/w-up-image"
+  },
+  "navigationBarTitleText": "意见反馈"
+}

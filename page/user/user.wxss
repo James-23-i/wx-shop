@@ -1,0 +1,159 @@
+/* page/user/user.wxss */
+.user_info{
+  height: 45vh;
+  overflow: hidden;
+  background-color: var(--themeColor);
+  position: relative;
+}
+
+.user_info .img_bg{
+  width: 100%;
+  filter: blur(10rpx);
+}
+
+.user_login{
+  display: flex;
+  height: 20vh;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user_login .user_head_img .img_head{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.btn{
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(235, 68, 80, .9);
+}
+
+.login{
+  height: 50rpx;
+  width: 100rpx;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 10rpx;
+}
+
+.user_detail{
+  background-color: #e6e6e6;
+  height: 55vh;
+  position: relative;
+  font-size: 26rpx;
+}
+
+.goods_detail{
+  display: flex;
+  height: 80rpx;
+  background-color: #fff;
+  width: 90%;
+  position: absolute;
+  top: -60rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.collect_shops, .collect_goods, .collect_attent, .collect_history{
+  flex: 1;
+  text-align: center;
+  padding: 5rpx 0;
+}
+
+.goods_detail .collect{
+  color: var(--themeColor);
+}
+
+.my_order{
+  display: flex;
+  height: 180rpx;
+  background-color: #fff;
+  position: absolute;
+  width: 90%;
+  top: 40rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.my_order .title{
+  padding: 10rpx;
+  border-bottom: 4rpx solid #e6e6e6;
+}
+
+.order_detail{
+  display: flex;
+  height: 127rpx;
+}
+
+.all_order, .wait_pay, .wait_good, .refundShop{
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+
+.order_detail .icon .img{
+  width: 30%;
+}
+
+.nav_manager{
+  position: absolute;
+  top: 245rpx;
+  background-color: #fff;
+  height: 56rpx;
+  box-sizing: border-box;
+  width: 90%;
+  left: 50%;
+  padding: 10rpx;
+  transform: translateX(-50%);
+}
+
+.content{
+  height: 168rpx;
+  width: 90%;
+  position: absolute;
+  top: 323rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+}
+
+.conn, .feedback, .about{
+  flex: 1;
+  border-bottom: 4rpx solid #e6e6e6;
+  padding: 10rpx;
+}
+
+.content .conn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommend{
+  width: 90%;
+  height: 56rpx;
+  position: absolute;
+  box-sizing: border-box;
+  top: 513rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10rpx;
+
+
+}

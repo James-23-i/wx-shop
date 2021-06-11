@@ -1,0 +1,54 @@
+/* page/search/search.wxss */
+page{
+  background-color: #e6e6e6;
+}
+
+.search_input{
+  display: flex;
+  padding: 20rpx;
+  position: relative;
+}
+
+.input{
+  background-color: #fff;
+  height: 70rpx;
+  width: 97%;
+  border-radius: 5rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+
+.btn{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 70rpx;
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35rpx;
+  color: #fff;
+  font-size: 20rpx;
+  /* 为了提高层级，触发点击事件 */
+  z-index: 2;
+}
+
+.scroll{
+  height: 800rpx;
+  padding: 0 20rpx;
+  width: 92%;
+}
+
+.search_content .search_item{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #fff;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 26rpx;
+}
+

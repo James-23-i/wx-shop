@@ -1,0 +1,10 @@
+<!--components/w-up-image/w-up-image.wxml-->
+<view class="up_image">
+  <image class="img" src="{{src}}" mode="widthFix"></image>
+  <!-- 添加的图片有点击放大和删除的效果，所以点击插号要阻止事件冒泡 -->
+  <icon class="icon" 
+        type="clear" 
+        color="red"
+        catchtap="delImage">
+</icon>
+</view>

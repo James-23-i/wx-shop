@@ -1,0 +1,32 @@
+<!--page/pay/pay.wxml-->
+<!-- <view class="get_address" wx:if="{{!address.userName}}">
+  <button type="warn" plain class="btn" bindtap="chooseAddress">添加收获地址</button>
+</view> -->
+
+<view class="show_address">
+  <view class="name_address">
+    <view class="name">{{address.userName}}</view>
+    <view class="address">{{addressAll}}</view>
+  </view>
+  <view class="telNumber">
+    {{address.telNumber}}
+  </view>
+</view>
+
+<view class="textCart">购物车</view>
+
+<scroll-view scroll-y class="scroll">
+  <w-good-item checkedCart="{{checkedCart}}"/>
+</scroll-view>
+
+<view class="toolbar">
+  <view class="totalPrice">
+    <view class="priceText">
+      合计：<text class="text">￥{{allPrice}}</text>
+    </view>
+    <view class="tips">包含运费</view>
+  </view>
+  <view class="totalNum" bindtap="handlePay">
+    支付（{{allNum}}）
+  </view>
+</view>

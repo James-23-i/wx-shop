@@ -1,0 +1,8 @@
+<!--page/login/login.wxml-->
+<view class="btn">
+  <button size="mini" 
+            open-type="getUserInfo" 
+            bindgetuserinfo="getUserInfo">
+        登录
+  </button>
+</view>

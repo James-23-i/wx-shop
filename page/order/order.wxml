@@ -1,0 +1,22 @@
+<!--page/order/order.wxml-->
+<wxs src="../../utils/util.wxs" module="tool"></wxs>
+<w-tab-control titles="{{titles}}"/>
+<view class="order">
+  <block wx:for="{{order.data}}" wx:key="index">
+    <view class="order_item">
+      <view class="order_number">
+        <view class="text">订单编号：</view>
+        <view>{{item.order_num}}</view>
+      </view>
+      <view class="order_price">
+        <view class="text">订单价格：</view>
+        <view class="price_color">￥{{item.order_pri}}</view>
+      </view>
+      <view class="timeStamp">
+        <view class="text">订单日期：</view>
+        <!-- <view>{{item.timeStamp}}</view> -->
+        <view>{{tool.formatTimeTwo(item.timeStamp, 'Y/M/D h:m:s')}}</view>
+      </view>
+    </view>
+  </block>
+</view>

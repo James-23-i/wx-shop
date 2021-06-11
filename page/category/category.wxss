@@ -1,0 +1,45 @@
+/* page/category/category.wxss */
+.menu{
+  display: flex;
+  height: calc(100vh - 90rpx);
+  font-size: 26rpx;
+}
+
+.menu .menu-left{
+  flex: 2;
+  background-color: rgba(241, 241, 241, .3);
+}
+
+.menu .menu-left .menu-left-item{
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+}
+
+.menu-right{
+  flex: 5;
+}
+
+.active{
+  border-left: 6rpx solid #eb4450;
+  background-color: #fff;
+  color: #eb4450;
+}
+
+.menu-right .menu-right-item .title{
+  display: flex;
+  width: 100%;
+  height: 70rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.menu-right-item .content .img{
+  width: 50%;
+}

@@ -1,0 +1,8 @@
+<!--page/index/childCpns/w-menu/w-menu.wxml-->
+<view class="menu">
+  <block wx:for="{{menu}}" wx:key="index">
+    <navigator class="menu-item">
+      <image class="img" mode="widthFix" src="{{item.image_src}}"></image>
+    </navigator>
+  </block>
+</view>

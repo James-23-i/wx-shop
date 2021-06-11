@@ -1,0 +1,7 @@
+/* page/login/login.wxss */
+.btn{
+  position: absolute;
+  top: 60rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}

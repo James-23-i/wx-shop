@@ -1,0 +1,83 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "分类",
+          "pathName": "page/category/category",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品详情页",
+          "pathName": "page/goods_list/goods_list",
+          "query": "cid=5",
+          "scene": null
+        },
+        {
+          "name": "detail",
+          "pathName": "page/goods_detail/goods_detail",
+          "query": "goods_id=43986",
+          "scene": null
+        },
+        {
+          "name": "购物车",
+          "pathName": "page/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "支付",
+          "pathName": "page/pay/pay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "授权",
+          "pathName": "page/auth/auth",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "page/user/user",
+          "pathName": "page/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单页面",
+          "pathName": "page/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "收藏",
+          "pathName": "page/collect/collect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "page/search/search",
+          "pathName": "page/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "page/feedback/feedback",
+          "pathName": "page/feedback/feedback",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

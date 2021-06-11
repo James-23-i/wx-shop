@@ -1,0 +1,7 @@
+<!--components/w-search-input/w-search-input.wxml-->
+<view class="search_input">
+  <navigator class="nav" url="/page/search/search">
+    <image class="img" mode="widthFix" src="/assets/icon/_search.png"></image>
+    搜索
+  </navigator>
+</view>

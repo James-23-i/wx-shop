@@ -1,0 +1,17 @@
+<!--page/goods_list/childCpns/w-good-item/w-good-item.wxml-->
+<block wx:for="{{goodsList}}" wx:key="index">
+  <view class="good-item">
+    <navigator class="good-content" url="/page/goods_detail/goods_detail?goods_id={{item.goods_id}}">
+      <view class="item-img">
+        <image class="img" 
+              mode="widthFix" 
+              src="{{item.goods_small_logo ? item.goods_small_logo : '/assets/glgs.jpg'}}">
+        </image>
+      </view>
+      <view class="content">
+        <view class="title">{{item.goods_name}}</view>
+        <view class="price">￥{{item.goods_price}}</view>
+      </view>
+    </navigator>
+  </view>
+</block>

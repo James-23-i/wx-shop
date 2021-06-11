@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "w-swiper": "/components/w-swiper/w-swiper",
+    "w-menu": "./childCpns/w-menu/w-menu",
+    "w-floor": "./childCpns/w-floor/w-floor"
+  },
+  "navigationBarTitleText": "优购首页"
+}

@@ -1,0 +1,90 @@
+/* page/cart/childCpns/w-good-item/w-good-item.wxss */
+.cart-item{
+  height: 200rpx;
+}
+
+.cart-item .item{
+  display: flex;
+  border-bottom: 5rpx solid rgba(241, 241, 241);
+}
+
+.cart-item .item .check{
+  height: 200rpx;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-item .item .img_logo{
+  width: 30%;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-item .item .img_logo .img{
+  width: 80%;
+}
+
+.cart-item .item .desc_num_price{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cart-item .item .desc_num_price .price_num{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+
+.cart-item .item .desc_num_price .price_num .changeNum{
+  display: flex;
+}
+
+.changeNum .btnSub, .changeNum .btnAdd{
+  border: 2rpx solid #555;
+  width: 35rpx;
+  height: 35rpx;
+  text-align: center;
+  line-height: 35rpx;
+}
+
+.changeNum .num{
+  padding: 0 10rpx;
+}
+
+.cart-item .item .desc_num_price .price_num .price{
+  color: var(--themeColor);
+  font-weight: 700;
+}
+
+.cart-item .item .desc_num_price .title{
+  padding: 0 20rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 26rpx;
+}
+
+.cart{
+  height: calc(100vh - 124rpx - 88rpx - 80rpx);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart .img{
+  width: 15%;
+}
+
+.cart .img, .cart .title, .cart .nav{
+  margin-top: 30rpx;
+} 

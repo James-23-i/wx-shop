@@ -1,0 +1,18 @@
+<!--page/index/childCpns/w-floor/w-floor.wxml-->
+<!-- 数据 floorData需要进行二次循环 -->
+<view class="floor">
+  <block wx:for="{{floorData}}" wx:key="index" wx:for-item="item1" wx:for-index="index1">
+    <view class="floor-item">
+      <view class="floor-item-title">
+        <image class="img" mode="widthFix" src="{{item1.floor_title.image_src}}"></image>
+      </view>
+      <block wx:for="{{item1.product_list}}" wx:key="index1">
+        <navigator class="nav">
+          <!-- 这里的 index为 product_list的 index
+              当 index === 0为第一张图片时，设置宽度自适应，不为0时设置默认值scaleToFill-->
+          <image class="img" mode="{{index === 0 ? 'widthFix' : ''}}" src="{{item.image_src}}"></image>
+        </navigator>
+      </block>
+    </view>
+  </block>
+</view>

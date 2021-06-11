@@ -1,0 +1,88 @@
+/* page/goods_detail/goods_detail.wxss */
+@import '/styles/icon.wxss';
+.scroll{
+  height: calc(100vh - 90rpx);
+}
+
+.desc .price, .photoDesc{
+  color: var(--themeColor);
+  font-size: 30rpx;
+  font-weight: 800;
+  padding: 20rpx;
+}
+
+.title-star{
+  display: flex;
+}
+
+.title-star .title{
+  flex: 4;
+  color: #555;
+  margin-left: 10rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title-star .star{
+  border-left: 5rpx solid #555;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #555;
+}
+
+.toolbar{
+  height: 90rpx;
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  font-size: 24rpx;
+}
+
+.toolbar .service, .toolbar .share, .toolbar .cart{
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.toolbar .btn{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.toolbar .addCart{
+  width: 30%;
+  text-align: center;
+  height: 100%;
+  line-height: 90rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: rgba(255, 165, 0);
+}
+
+.toolbar .buy{
+  background-color: rgba(235, 68, 80);
+  width: 30%;
+  text-align: center;
+  height: 100%;
+  line-height: 90rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.icon-shoucang1-copy{
+  color: #eb4450;
+}
